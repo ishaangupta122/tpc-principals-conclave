@@ -2,7 +2,18 @@ import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
-const messages = [
+// Define types for the message data
+interface Message {
+  image: string;
+  title: string;
+  name: string;
+  message: string;
+  link: string;
+  designation: string;
+  location: string;
+}
+
+const messages: Message[] = [
   {
     image: "./principal_rounded.png",
     title: "PRINCIPAL'S MESSAGE",
@@ -47,7 +58,10 @@ const messages = [
   },
 ];
 
-const MessageCard = ({ data }) => (
+// Define types for the component state
+interface CarouselProps { }
+
+const MessageCard: React.FC<{ data: Message }> = ({ data }) => (
   <div className="p-5 w-full md:w-1/2">
     <div className='flex flex-col items-start gap-7 bg-white shadow rounded-2xl p-6 h-full'>
       <img
@@ -56,9 +70,6 @@ const MessageCard = ({ data }) => (
         alt={`${data.title}'s Image`}
       />
       <div className='w-full'>
-        {/* <p className='playfair italic text-2xl'>
-          Education Leadership Redefined: <br /> Invitation from the
-        </p> */}
         <p className='playfair font-semibold text-3xl mt-4'>{data.title}</p>
         <p className='mt-4 font-light text-slate-600 text-justify'>{data.message}</p>
         <Link to={data.link} className='inline-block mt-2 text-red-600'>
@@ -77,12 +88,12 @@ const MessageCard = ({ data }) => (
   </div>
 );
 
-const Carousel = () => {
-  const [index, setIndex] = useState(0);
-  const [isLarge, setIsLarge] = useState(window.innerWidth >= 1024);
+const Carousel: React.FC<CarouselProps> = () => {
+  const [index, setIndex] = useState<number>(0);
+  const [isLarge, setIsLarge] = useState<boolean>(window.innerWidth >= 1024);
   const step = isLarge ? 2 : 1;
 
-  const updateIndex = (delta) => {
+  const updateIndex = (delta: number) => {
     setIndex((prev) => (prev + delta * step + messages.length) % messages.length);
   };
 
@@ -103,7 +114,7 @@ const Carousel = () => {
 
   const totalSlides = Math.ceil(messages.length / step);
   const getCurrentSlide = () => Math.floor(index / step);
-  const goToSlide = (slideIndex) => setIndex(slideIndex * step);
+  const goToSlide = (slideIndex: number) => setIndex(slideIndex * step);
 
   return (
     <div className='px- md:px- py-14'
