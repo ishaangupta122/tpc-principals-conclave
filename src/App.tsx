@@ -11,6 +11,7 @@ import Chairman from "./pages/Chairman";
 import ViceChairman from "./pages/ViceChairman";
 import Coordinator from "./pages/Coordinator";
 import ScrollToTop from "./components/ScrollToTop";
+import Carousel from "./components/MessageCarousel";
 
 function App() {
   return (
@@ -27,7 +28,7 @@ function App() {
           <Route path='/chairmans-message' element={<Chairman />} />
           <Route path='/vice-chairmans-message' element={<ViceChairman />} />
           <Route path='/coordinators-message' element={<Coordinator />} />
-
+          <Route path="/wisdom-bites" element={<Carousel/>}/>
           <Route
             path='*'
             element={
