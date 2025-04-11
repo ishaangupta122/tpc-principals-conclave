@@ -1,19 +1,19 @@
 const StorySection = () => {
   return (
     <div
-      className='container max-w-7xl mx-auto py-14 md:px-10 px-5'
-      id='our-story'>
-      <p className='agenda-title flex flex-col gap-1 justify-center items-start font-semibold mb-10'>
-        <span className='italic text-3xl '>
+      className="container max-w-7xl mx-auto py-14 md:px-10 px-5"
+      id="our-story">
+      <p className="agenda-title flex flex-col gap-1 justify-center items-start font-semibold mb-10">
+        <span className="italic text-3xl ">
           Thapar Polytechnic College, Patiala:
         </span>
-        <span className='italic text-2xl text-slate-700'>
+        <span className="italic text-2xl text-slate-700">
           A Legacy of Excellence in Technical Education
         </span>
       </p>
 
-      <div className='flex flex-wrap md:flex-nowrap flex-col-reverse md:flex-row justify-between items-start gap-8 bg-white col-span-2'>
-        <p className='text-slate-600 font-medium w-full'>
+      <div className="flex flex-wrap md:flex-nowrap flex-col-reverse md:flex-row justify-between items-start gap-8 bg-white col-span-2">
+        <p className="text-slate-950 font-light w-full">
           Established in 1956 under the Thapar Education Trust, Thapar
           Polytechnic College (TPC), Patiala, is a Government-Aided Institute
           and a pioneer in technical education. With a rich history of producing
@@ -48,9 +48,9 @@ const StorySection = () => {
           professionals ready to meet market demands.
         </p>
         <img
-          src='./5th.png'
-          alt='About Image'
-          className='h-[90vh] max-h-[600px] rounded-xl object-contain'
+          src="./5th.png"
+          alt="About Image"
+          className="h-[90vh] max-h-[600px] rounded-xl object-contain"
         />
       </div>
     </div>

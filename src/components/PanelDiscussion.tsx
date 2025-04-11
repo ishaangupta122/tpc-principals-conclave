@@ -20,24 +20,28 @@ const PanelDiscussion: React.FC = () => {
 
   return (
     <div
-      className='py-10'
-      style={{ background: "url(./pattern-bg.jpg)", backgroundRepeat: "no-repeat", backgroundSize: "contain" }}>
-      <div className='mx-auto container max-w-7xl text-white md:px-10 px-5'>
-        <div className='py-5'>
-          <p className='text-black text-4xl font-medium italic md:ml-4'>
+      className="py-10"
+      style={{
+        background: "url(./pattern-bg.jpg)",
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "contain",
+      }}>
+      <div className="mx-auto container max-w-7xl text-white md:px-10 px-5">
+        <div className="py-5">
+          <p className="logo-title text-black text-4xl font-medium italic md:ml-4">
             Topics for Panel Discussion
           </p>
-          <div className='mt-8 grid grid-cols-1 md:grid-cols-2'>
+          <div className="mt-8 grid grid-cols-1 md:grid-cols-2">
             {themes.map((theme, index) => (
               <div
                 key={index}
-                className='my-4 md:mx-5 rounded-md custom-gradient p-7'>
-                <div className='flex items-center gap-3'>
-                  <p className='playfair text-xl font-semibold'>
+                className="my-4 md:mx-5 rounded-md custom-gradient p-7">
+                <div className="flex items-center gap-3">
+                  <p className="logo-title text-xl font-semibold">
                     {theme.title}
                   </p>
                 </div>
-                <p className='mt-3 font-light opacity-80'>
+                <p className="mt-3 font-light opacity-80">
                   {theme.description}
                 </p>
                 {/* <img
@@ -48,7 +52,7 @@ const PanelDiscussion: React.FC = () => {
               </div>
             ))}
           </div>
-          <img src='./4th.png' alt='' className='py-7 object-contain' />
+          <img src="./4th.png" alt="" className="py-7 object-contain" />
         </div>
       </div>
     </div>
