@@ -53,7 +53,7 @@ const TeachersRow = () => {
 
 	return (
 		<div className='w-full py-8 teacher-row-gradient'>
-			<div className='mx-auto px-4'>
+			<div className='mx-auto px-4 max-w-7xl'>
 				<div className='flex flex-wrap justify-around gap-6'>
 					{teachersData.map((teacher) => (
 						<div
