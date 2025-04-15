@@ -8,7 +8,7 @@ import MasonryGallery from '../components/MasonryLayout';
 import BottomDescription from '../components/BottomDescription';
 import Carousel from '../components/MessageCarousel';
 import HomeBanner from '../components/HomeBanner';
-import TeachersRow from '../components/TeachersRow';
+import PanelMembers from '../components/PanelMembers';
 
 const HomePage = () => {
 	return (
@@ -18,7 +18,7 @@ const HomePage = () => {
 			<InspirationVoice />
 			<PanelDiscussion />
 
-			<TeachersRow />
+			<PanelMembers />
 
 			<StorySection />
 			<Carousel />
