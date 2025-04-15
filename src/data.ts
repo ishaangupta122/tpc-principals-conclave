@@ -16,7 +16,7 @@ export const voices = [
 	{
 		title: 'Deputy Director',
 		name: 'Sh. Ravinder Singh Hundal',
-		description: `Deputy Director, DTE Punjab`,
+		description: `Additional Director, DTE Punjab`,
 		image: '/ravinder_hundal_rounded.jpg',
 	},
 	{
@@ -29,21 +29,20 @@ export const voices = [
 	{
 		title: 'Registrar-cum-Controller of Exams',
 		name: 'Sh. Sanjeev Goyal ',
-		description: 'Registrar-cum-Controller of Exams PSBTE&IT Chandigarh',
+		description: 'Registrar-cum-Controller of Exams PSBTE & IT Chandigarh',
 		image: '/Sanjeev_Goyal_rounded.jpg',
 	},
 	{
 		title: 'Vice Chairman',
 		name: 'DR. GURBINDER SINGH',
 		description:
-			'Vice Chairman, Managing Committee TPC, Registrar, TIET, Director LMTSM',
+			'Vice Chairman, Managing Committee TPC, Registrar, TIET & Director, LMTSM',
 		image: '/vice_chairman_rounded.png',
 	},
 	{
 		title: 'Coordinator',
 		name: 'DR. DWARIKA NATH RATHA',
-		description:
-			'Professor, Civil Engineering, TIET, Coordinator, Thapar Polytechnic College',
+		description: 'Professor, Civil Engineering, TIET, Coordinator, TPC',
 		image: '/coordinator_rounded.png',
 	},
 	{

@@ -4,6 +4,9 @@ const PanelMembers = () => {
 	return (
 		<div className='w-full py-8 custom-gradient'>
 			<div className='mx-auto px-4 max-w-7xl'>
+				<h1 className='logo-title text-white text-4xl font-medium italic md:ml-4 mb-8'>
+					Panel Members
+				</h1>
 				<div className='flex flex-wrap justify-around lg:flex-nowrap lg:justify-between gap-4'>
 					{panel_members.map((member) => (
 						<div
