@@ -1,10 +1,11 @@
-import Agenda from "../components/AgendaSection";
+import Agenda from '../components/AgendaSection';
 
 const AgendaPage = () => {
-  return (
-    <>
-      <Agenda />
-    </>
-  );
+	return (
+		<>
+			<Agenda />
+		</>
+	);
 };
+
 export default AgendaPage;
