@@ -39,7 +39,7 @@ const TeachersRow = () => {
     {
       id: 7,
       name: "Mr. Vivek Tiwari",
-      title: "DAV, Patiala",
+      title: "DAV Public School, Patiala",
       img: "./Vivek_Tiwari_rounded.jpg",
     },
   ];
